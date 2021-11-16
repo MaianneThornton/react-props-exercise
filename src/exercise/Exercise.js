@@ -1,3 +1,4 @@
+import Bonus from "../bonus/bonus";
 // // 1a. Create a function component called Exercise
 // function Exercise (){
 //   // 2a. Inside the Exercise function component, use the RETURN keyword with parentheses to have the Exercise function component return two h1s with the following text in each. First h1: "Great". Second h1: "Not Great". (HINT: Remember only one parent/top element can be returned from a component)
@@ -21,22 +22,14 @@ function Exercise ({good = `Great`, bad = `Not Great`}){
     }
       <h1>{good}</h1>
       <h1>{bad}</h1>
+      <Bonus />
     </div>
-  
 )
 };
 
 
 // Important: Remember to stop your React App from running after you complete the exercise. You can do this by opening the terminal session that the React App is running on and pressing (Control + C) or you can click the trash can icon to completely end that terminal session.
-// BONUS TERRITORY
-// J. Create a new folder/directory in the “src” folder called “bonus”
-// K. Inside the exercise folder create an Bonus.js file
-// L. Open the Bonus.js file and complete the following...
-// 6a. Create a function component called Bonus.
 
-// 6b. Inside the Bonus function component use the return keyword to have it return an h1 with the text of "Bonus Component"
-
-// 6c. Use the Bonus component in the Exercise component so it will display after the two h1 elements on the webpage
 
 // 1b. Add the export line at the bottom of the file
 export default Exercise;
